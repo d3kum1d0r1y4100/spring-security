@@ -186,3 +186,8 @@ updates:
     directory: /docs
     schedule:
       interval: weekly
+  - package-ecosystem: "npm"
+    directory: "/docs"
+    schedule:
+      interval: "daily"
+      time: "18:24"
