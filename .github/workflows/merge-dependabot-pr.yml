@@ -42,6 +42,7 @@ jobs:
             gh pr edit ${{ github.event.pull_request.number }} --milestone $MILESTONE
             echo mergeEnabled=true >> $GITHUB_OUTPUT
           fi
+          echo mergeEnabled=true >> $GITHUB_OUTPUT
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
