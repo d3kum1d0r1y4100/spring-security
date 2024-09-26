@@ -50,4 +50,4 @@ jobs:
         if: steps.set-milestone.outputs.mergeEnabled
         run: gh pr merge ${{ github.event.pull_request.number }} --auto --rebase
         env:
-          GH_TOKEN: ${{ secrets.GH_ACTIONS_REPO_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
